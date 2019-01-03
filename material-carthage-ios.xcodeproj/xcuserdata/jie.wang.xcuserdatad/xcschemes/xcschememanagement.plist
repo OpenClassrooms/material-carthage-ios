@@ -4,10 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>material-carthage-ios.xcscheme_^#shared#^_</key>
+		<key>material-carthage-ios.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>85C4FABE21DE1904003697D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85C4FAC721DE1904003697D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
