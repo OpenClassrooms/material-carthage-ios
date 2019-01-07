@@ -7,6 +7,8 @@ target 'material-carthage-ios' do
 
   # Pods for material-carthage-ios
   pod 'MaterialComponents/FlexibleHeader'
+  pod 'MaterialComponents/Tabs'
+  pod 'MaterialComponents/AppBar'
 
   target 'material-carthage-iosTests' do
     inherit! :search_paths
