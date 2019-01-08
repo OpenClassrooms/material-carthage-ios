@@ -9,6 +9,7 @@ target 'material-carthage-ios' do
   pod 'MaterialComponents/FlexibleHeader'
   pod 'MaterialComponents/Tabs'
   pod 'MaterialComponents/AppBar'
+  pod 'MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight'
 
   target 'material-carthage-iosTests' do
     inherit! :search_paths

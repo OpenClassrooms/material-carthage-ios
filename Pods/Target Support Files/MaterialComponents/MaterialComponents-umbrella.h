@@ -32,6 +32,8 @@
 #import "MDCFlexibleHeaderView+ShiftBehavior.h"
 #import "MDCFlexibleHeaderView.h"
 #import "MDCFlexibleHeaderViewController.h"
+#import "MaterialFlexibleHeader+CanAlwaysExpandToMaximumHeight.h"
+#import "MDCFlexibleHeaderView+canAlwaysExpandToMaximumHeight.h"
 #import "MaterialHeaderStackView.h"
 #import "MDCHeaderStackView.h"
 #import "MaterialInk.h"

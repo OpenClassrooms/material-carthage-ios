@@ -28,6 +28,8 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/UIMetrics
     - MDFTextAccessibility
+  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (73.0.0)":
+    - MaterialComponents/FlexibleHeader
   - MaterialComponents/HeaderStackView (73.0.0)
   - MaterialComponents/Ink (73.0.0):
     - MaterialComponents/private/Math
@@ -67,6 +69,7 @@ PODS:
 DEPENDENCIES:
   - MaterialComponents/AppBar
   - MaterialComponents/FlexibleHeader
+  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight"
   - MaterialComponents/Tabs
 
 SPEC REPOS:
@@ -80,6 +83,6 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
-PODFILE CHECKSUM: 9856be75545497f642a7b23d65a32c054f2a2aaf
+PODFILE CHECKSUM: 36d657061e700c2bc89bfc06f598592ef7aed858
 
 COCOAPODS: 1.5.3
