@@ -28,10 +28,3 @@ xcuserdata/
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
-
-
-
-# fastlane
-fastlane/README.md
-fastlane/report.xml
-fastlane/configuration.yml
