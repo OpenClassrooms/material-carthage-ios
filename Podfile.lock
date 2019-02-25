@@ -39,11 +39,16 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
+  - MaterialComponents/OverlayWindow (73.0.0):
+    - MaterialComponents/private/Application
   - MaterialComponents/private/Application (73.0.0)
   - MaterialComponents/private/Icons/Base (73.0.0)
   - MaterialComponents/private/Icons/ic_arrow_back (73.0.0):
     - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/KeyboardWatcher (73.0.0):
+    - MaterialComponents/private/Application
   - MaterialComponents/private/Math (73.0.0)
+  - MaterialComponents/private/Overlay (73.0.0)
   - MaterialComponents/private/Shapes (73.0.0):
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
@@ -52,6 +57,14 @@ PODS:
   - MaterialComponents/ShadowElevations (73.0.0)
   - MaterialComponents/ShadowLayer (73.0.0):
     - MaterialComponents/ShadowElevations
+  - MaterialComponents/Snackbar (73.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/Typography
   - MaterialComponents/Tabs (73.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Ink
@@ -70,6 +83,7 @@ DEPENDENCIES:
   - MaterialComponents/AppBar
   - MaterialComponents/FlexibleHeader
   - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight"
+  - MaterialComponents/Snackbar
   - MaterialComponents/Tabs
 
 SPEC REPOS:
@@ -83,6 +97,6 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
-PODFILE CHECKSUM: 36d657061e700c2bc89bfc06f598592ef7aed858
+PODFILE CHECKSUM: c4cb39710a4df8c126d704f32071266a2199cfb9
 
 COCOAPODS: 1.5.3
