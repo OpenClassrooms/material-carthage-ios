@@ -10,7 +10,11 @@ import MaterialComponents
 class material_carthage_iosTests: XCTestCase {
 
     func test_WhenCreatingMaterialComponent_ThenItCreatesIt() {
+
         let view = MDCFlexibleHeaderView()
         XCTAssertNotNil(view)
+
+        let snackBar = MDCSnackbarMessageView()
+        XCTAssertNotNil(snackBar)
     }
 }
