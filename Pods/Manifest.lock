@@ -1,6 +1,6 @@
 PODS:
-  - MaterialComponents/AnimationTiming (73.0.0)
-  - MaterialComponents/AppBar (73.0.0):
+  - MaterialComponents/AnimationTiming (85.1.0)
+  - MaterialComponents/AppBar (85.1.0):
     - MaterialComponents/FlexibleHeader
     - MaterialComponents/HeaderStackView
     - MaterialComponents/NavigationBar
@@ -11,53 +11,58 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/ButtonBar (73.0.0):
+  - MaterialComponents/ButtonBar (85.1.0):
     - MaterialComponents/Buttons
     - MaterialComponents/private/Application
     - MDFInternationalization
-  - MaterialComponents/Buttons (73.0.0):
+  - MaterialComponents/Buttons (85.1.0):
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
-    - MaterialComponents/private/Shapes
+    - MaterialComponents/Ripple
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/FlexibleHeader (73.0.0):
+  - MaterialComponents/FlexibleHeader (85.1.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/UIMetrics
     - MDFTextAccessibility
-  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (73.0.0)":
+  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (85.1.0)":
     - MaterialComponents/FlexibleHeader
-  - MaterialComponents/HeaderStackView (73.0.0)
-  - MaterialComponents/Ink (73.0.0):
+  - MaterialComponents/HeaderStackView (85.1.0)
+  - MaterialComponents/Ink (85.1.0):
     - MaterialComponents/private/Math
-  - MaterialComponents/NavigationBar (73.0.0):
+  - MaterialComponents/NavigationBar (85.1.0):
     - MaterialComponents/ButtonBar
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/OverlayWindow (73.0.0):
+  - MaterialComponents/OverlayWindow (85.1.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Application (73.0.0)
-  - MaterialComponents/private/Icons/Base (73.0.0)
-  - MaterialComponents/private/Icons/ic_arrow_back (73.0.0):
+  - MaterialComponents/Palettes (85.1.0)
+  - MaterialComponents/private/Application (85.1.0)
+  - MaterialComponents/private/Icons/Base (85.1.0)
+  - MaterialComponents/private/Icons/ic_arrow_back (85.1.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/KeyboardWatcher (73.0.0):
+  - MaterialComponents/private/KeyboardWatcher (85.1.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (73.0.0)
-  - MaterialComponents/private/Overlay (73.0.0)
-  - MaterialComponents/private/Shapes (73.0.0):
+  - MaterialComponents/private/Math (85.1.0)
+  - MaterialComponents/private/Overlay (85.1.0)
+  - MaterialComponents/private/UIMetrics (85.1.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/Ripple (85.1.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (85.1.0)
+  - MaterialComponents/ShadowLayer (85.1.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (85.1.0):
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/private/UIMetrics (73.0.0):
-    - MaterialComponents/private/Application
-  - MaterialComponents/ShadowElevations (73.0.0)
-  - MaterialComponents/ShadowLayer (73.0.0):
-    - MaterialComponents/ShadowElevations
-  - MaterialComponents/Snackbar (73.0.0):
+  - MaterialComponents/Snackbar (85.1.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Buttons
     - MaterialComponents/OverlayWindow
@@ -65,15 +70,17 @@ PODS:
     - MaterialComponents/private/KeyboardWatcher
     - MaterialComponents/private/Overlay
     - MaterialComponents/Typography
-  - MaterialComponents/Tabs (73.0.0):
+  - MaterialComponents/Tabs (85.1.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Ink
+    - MaterialComponents/Palettes
     - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/Typography (73.0.0):
+  - MaterialComponents/Typography (85.1.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
@@ -93,7 +100,7 @@ SPEC REPOS:
     - MDFTextAccessibility
 
 SPEC CHECKSUMS:
-  MaterialComponents: 5ee94fadd206902ffa318ba5adfd3c9c8c799000
+  MaterialComponents: 7401c9849f9860a214f35453e040dc17502e8b6f
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
