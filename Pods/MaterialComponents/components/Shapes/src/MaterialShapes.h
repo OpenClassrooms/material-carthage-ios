@@ -12,28 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "MDCLegacyInkLayer.h"
-
-@protocol MDCLegacyInkLayerRippleDelegate <NSObject>
-
-@optional
-
-- (void)animationDidStop:(CAAnimation *)anim
-              shapeLayer:(CAShapeLayer *)shapeLayer
-                finished:(BOOL)finished;
-
-@end
-
-@interface MDCLegacyInkLayer ()  <MDCLegacyInkLayerRippleDelegate>
-@end
-
-@interface MDCLegacyInkLayerRipple : CAShapeLayer
-@end
-
-@interface MDCLegacyInkLayerForegroundRipple : MDCLegacyInkLayerRipple
-- (void)exit:(BOOL)animated;
-@end
-
-@interface MDCLegacyInkLayerBackgroundRipple : MDCLegacyInkLayerRipple
-- (void)exit:(BOOL)animated;
-@end
+#import "MDCCornerTreatment.h"
+#import "MDCEdgeTreatment.h"
+#import "MDCPathGenerator.h"
+#import "MDCRectangleShapeGenerator.h"
+#import "MDCShapeGenerating.h"
+#import "MDCShapedShadowLayer.h"
+#import "MDCShapedView.h"

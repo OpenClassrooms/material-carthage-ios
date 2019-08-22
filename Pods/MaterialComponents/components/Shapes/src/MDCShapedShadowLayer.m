@@ -15,6 +15,7 @@
 #import "MDCShapedShadowLayer.h"
 
 #import "MDCShapeGenerating.h"
+#import "MaterialColor.h"
 
 @implementation MDCShapedShadowLayer
 
@@ -62,8 +63,10 @@
 - (void)layoutSublayers {
   // We have to set the path before calling [super layoutSublayers] because we need the shadowPath
   // to be correctly set before MDCShadowLayer performs layoutSublayers.
-  CGRect standardizedBounds = CGRectStandardize(self.bounds);
-  self.path = [self.shapeGenerator pathForSize:standardizedBounds.size];
+  if (self.shapeGenerator) {
+    CGRect standardizedBounds = CGRectStandardize(self.bounds);
+    self.path = [self.shapeGenerator pathForSize:standardizedBounds.size];
+  }
 
   [super layoutSublayers];
 
@@ -123,6 +126,11 @@
 - (void)setShapedBorderColor:(UIColor *)shapedBorderColor {
   _shapedBorderColor = shapedBorderColor;
 
+  if ([self.delegate isKindOfClass:[UIView class]]) {
+    UIView *view = (UIView *)self.delegate;
+    _shapedBorderColor =
+        [_shapedBorderColor mdc_resolvedColorWithTraitCollection:view.traitCollection];
+  }
   if (CGPathIsEmpty(self.path)) {
     self.borderColor = _shapedBorderColor.CGColor;
     _colorLayer.strokeColor = nil;

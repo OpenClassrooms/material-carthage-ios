@@ -90,7 +90,7 @@ const CGFloat MDCTabBarViewControllerAnimationDuration = (CGFloat)0.3;
   return self;
 }
 
--(void)commonInit {
+- (void)commonInit {
   if (self.tabBar) {
     return;
   }
@@ -118,6 +118,14 @@ const CGFloat MDCTabBarViewControllerAnimationDuration = (CGFloat)0.3;
 - (void)viewDidLayoutSubviews {
   [super viewDidLayoutSubviews];
   [self updateLayout];
+}
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+  [super traitCollectionDidChange:previousTraitCollection];
+
+  if (self.traitCollectionDidChangeBlock) {
+    self.traitCollectionDidChangeBlock(self, previousTraitCollection);
+  }
 }
 
 #pragma mark - Properties
@@ -330,7 +338,7 @@ const CGFloat MDCTabBarViewControllerAnimationDuration = (CGFloat)0.3;
   }
 }
 
-- (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar {
+- (UIBarPosition)positionForBar:(id<UIBarPositioning>)bar {
   if (_tabBar == bar) {
     return UIBarPositionBottom;
   } else {
