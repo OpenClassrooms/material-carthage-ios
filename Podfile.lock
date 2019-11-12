@@ -108,6 +108,7 @@ DEPENDENCIES:
   - MaterialComponents/AppBar
   - MaterialComponents/FlexibleHeader
   - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight"
+  - MaterialComponents/NavigationBar
   - MaterialComponents/Snackbar
   - MaterialComponents/Tabs
 
@@ -122,6 +123,6 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 
-PODFILE CHECKSUM: c4cb39710a4df8c126d704f32071266a2199cfb9
+PODFILE CHECKSUM: eca498de1e4dd91601baf60eb823630f16a33ca6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0
