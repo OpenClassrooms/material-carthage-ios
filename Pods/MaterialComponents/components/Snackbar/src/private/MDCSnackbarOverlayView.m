@@ -18,11 +18,13 @@
 
 #import <MDFInternationalization/MDFInternationalization.h>
 
+#import "../MDCSnackbarError.h"
 #import "../MDCSnackbarMessage.h"
-#import "MDCSnackbarMessageViewInternal.h"
 #import "MaterialAnimationTiming.h"
-#import "MaterialApplication.h"
 #import "MaterialAvailability.h"
+#import "MDCSnackbarMessageInternal.h"
+#import "MDCSnackbarMessageViewInternal.h"
+#import "MaterialApplication.h"
 #import "MaterialKeyboardWatcher.h"
 #import "MaterialOverlay.h"
 
@@ -247,10 +249,6 @@ static const CGFloat kMaximumHeight = 80;
     _snackbarLeadingMarginConstraint.constant = leftMargin;
     _snackbarTrailingMarginConstraint.constant = -1 * rightMargin;
   }
-}
-
-- (void)dealloc {
-  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 /**
@@ -513,7 +511,7 @@ static const CGFloat kMaximumHeight = 80;
   self.snackbarView = snackbarView;  // Install the Snackbar.
   self.bottomConstraint.constant = -self.dynamicBottomMargin;
 
-  if (animated) {
+  if (animated && snackbarView) {
     [self slideInMessageView:snackbarView completion:completion];
   } else {
     if (completion) {
@@ -523,7 +521,7 @@ static const CGFloat kMaximumHeight = 80;
 }
 
 - (void)dismissSnackbarViewAnimated:(BOOL)animated completion:(void (^)(void))completion {
-  if (animated) {
+  if (animated && self.snackbarView) {
     [self slideOutMessageView:self.snackbarView
                    completion:^{
                      self.snackbarView = nil;  // Uninstall the Snackbar
@@ -580,12 +578,27 @@ static const CGFloat kMaximumHeight = 80;
                                    duration:duration
                              timingFunction:timingFunction];
   } else {
-    NSMutableArray *animations =
-        [NSMutableArray arrayWithObject:[snackbarView animateSnackbarOpacityFrom:fromContentOpacity
-                                                                              to:toContentOpacity]];
+    NSMutableArray *animations = [[NSMutableArray alloc] init];
+    CABasicAnimation *opacityAnimation = [snackbarView animateSnackbarOpacityFrom:fromContentOpacity
+                                                                               to:toContentOpacity];
+    if (opacityAnimation) {
+      [animations addObject:opacityAnimation];
+    }
     if (onscreen) {
-      [animations addObject:[snackbarView animateSnackbarScaleFrom:MDCSnackbarEnterStartingScale
-                                                           toScale:1]];
+      CABasicAnimation *scaleAnimation =
+          [snackbarView animateSnackbarScaleFrom:MDCSnackbarEnterStartingScale toScale:1];
+      if (scaleAnimation) {
+        [animations addObject:scaleAnimation];
+      }
+    }
+    if (animations.count == 0) {
+      NSDictionary *errorDictionary = @{
+        @"MDCSnackbarMessageView" : snackbarView,
+      };
+      snackbarView.message.error =
+          [[NSError alloc] initWithDomain:MDCSnackbarErrorDomain
+                                     code:MDCSnackbarErrorSlideAnimationMisconfigured
+                                 userInfo:errorDictionary];
     }
     animationsGroup.animations = animations;
     [snackbarView.layer addAnimation:animationsGroup forKey:@"snackbarAnimation"];
