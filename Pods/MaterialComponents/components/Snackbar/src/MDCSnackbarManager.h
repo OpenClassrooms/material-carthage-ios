@@ -17,32 +17,14 @@
 #import "MDCSnackbarAlignment.h"
 #import "MaterialElevation.h"
 #import "MaterialShadowElevations.h"
+// TODO(b/151929968): Delete import of delegate headers when client code has been migrated to no
+// longer import delegates as transitive dependencies.
+#import "MDCSnackbarManagerDelegate.h"
 
 @class MDCSnackbarMessage;
 @class MDCSnackbarMessageView;
+@protocol MDCSnackbarManagerDelegate;
 @protocol MDCSnackbarSuspensionToken;
-
-/**
- Delegate protocol for the MDCSnackbarManager.
- */
-@protocol MDCSnackbarManagerDelegate <NSObject>
-
-/**
- This method is called after the MDCSnackbarMessageView instance is initialized and right before
- The view is presented on the screen.
-
- @param messageView The messageView of the snackbar that will be presented.
- */
-- (void)willPresentSnackbarWithMessageView:(nullable MDCSnackbarMessageView *)messageView;
-
-@optional
-
-/**
- This method is called after a Snackbar's dismissal animation is finished.
- */
-- (void)snackbarDidDisappear;
-
-@end
 
 /**
  Provides a means of displaying an unobtrusive message to the user.
@@ -217,6 +199,13 @@
 @property(nonatomic, assign) BOOL shouldApplyStyleChangesToVisibleSnackbars;
 
 /**
+ This accessibility notification posted when a Snackbar changes the focus of VoiceOver.
+
+ Default is set to UIAccessibilityLayoutChangedNotification.
+ */
+@property(nonatomic, assign) UIAccessibilityNotifications focusAccessibilityNotification;
+
+/**
  Returns the button title color for a particular control state.
 
  @param state The control state.
@@ -303,9 +292,7 @@
 @protocol MDCSnackbarSuspensionToken <NSObject>
 @end
 
-#pragma mark - To be deprecated
-
-@interface MDCSnackbarManager (LegacyAPI)
+@interface MDCSnackbarManager (ToBeDeprecated)
 
 /**
  The @c alignment property of the @c defaultManager instance.

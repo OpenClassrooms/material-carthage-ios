@@ -23,7 +23,6 @@
 #import "MaterialAnimationTiming.h"
 #import "MaterialInk.h"
 #import "MaterialMath.h"
-#import "MaterialRipple.h"
 #import "MaterialTypography.h"
 
 /// Size of image in points.
@@ -58,7 +57,6 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
 @property(nonatomic, strong) UIImageView *imageView;
 @property(nonatomic, strong) MDCItemBarBadge *badge;
 @property(nonatomic, strong) MDCInkTouchController *inkTouchController;
-@property(nonatomic, strong) MDCRippleTouchController *rippleTouchController;
 
 @property(nonatomic, strong) MDCItemBarStyle *style;
 
@@ -222,6 +220,7 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
                atIndex:(NSInteger)itemIndex
                  count:(NSInteger)itemCount {
   self.title = item.title;
+  self.selectedImage = item.selectedImage;
   self.image = item.image;
   self.badgeValue = item.badgeValue;
   if (@available(iOS 10.0, *)) {
@@ -231,6 +230,7 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
     }
   }
   self.accessibilityIdentifier = item.accessibilityIdentifier;
+  self.accessibilityLabel = item.accessibilityLabel;
 
   _itemIndex = itemIndex;
   _itemCount = itemCount;
@@ -347,6 +347,7 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
   BOOL animate = (self.window != nil);
 
   [super setSelected:selected];
+  [self updateDisplayedImage];
   [self updateTitleTextColor];
   [self updateImageTintColor];
   [self updateAccessibilityTraits];
@@ -365,8 +366,9 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
 - (nullable NSString *)accessibilityLabel {
   NSMutableArray *labelComponents = [NSMutableArray array];
 
-  // Use untransformed title as accessibility label to ensure accurate reading.
-  NSString *titleComponent = _title;
+  // If a custom accessibility label has not been set on UITabBarItem,
+  // then use untransformed title as accessibility label to ensure accurate reading.
+  NSString *titleComponent = [super accessibilityLabel] ?: _title;
   if (titleComponent.length > 0) {
     [labelComponents addObject:titleComponent];
   }
@@ -593,6 +595,7 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
 }
 
 - (void)updateRipple {
+  self.rippleTouchController.shouldProcessRippleWithScrollViewGestures = NO;
   MDCRippleView *rippleView = self.rippleTouchController.rippleView;
   rippleView.rippleColor = _style.rippleColor;
   rippleView.rippleStyle = _style.rippleStyle;
@@ -618,7 +621,11 @@ static const NSTimeInterval kSelectionAnimationDuration = 0.3;
 }
 
 - (void)updateDisplayedImage {
-  _imageView.image = _image;
+  if (self.isSelected && self.selectedImage != nil) {
+    self.imageView.image = self.selectedImage;
+  } else {
+    self.imageView.image = self.image;
+  }
 }
 
 - (void)updateDisplayedTitle {

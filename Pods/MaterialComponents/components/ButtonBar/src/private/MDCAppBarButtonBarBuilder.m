@@ -17,13 +17,14 @@
 #import <MDFInternationalization/MDFInternationalization.h>
 #import <objc/runtime.h>
 
-#import "MDCButtonBar+Private.h"
+#import "MaterialAvailability.h"
+#import "MDCButtonBar.h"
 #import "MDCButtonBarButton.h"
+#import "MDCButtonBar+Private.h"
 #import "MaterialButtons.h"
 
 // Additional insets for the left-most or right-most items.
-static const CGFloat kEdgeButtonAdditionalMarginPhone = 4;
-static const CGFloat kEdgeButtonAdditionalMarginPad = 12;
+static const CGFloat kEdgeButtonAdditionalMargin = 4;
 
 // The default MDCButton's alpha for display state is 0.1 which in the context of bar buttons makes
 // it practically invisible. Setting button to a higher opacity is closer to what the button should
@@ -134,7 +135,17 @@ static const UIEdgeInsets kButtonInset = {0, 12, 0, 12};
            NSStringFromClass([MDCButtonBar class]));
 #endif
 
+#ifdef __IPHONE_14_0
+  MDCButtonBarButton *button;
+  if (@available(iOS 14.0, *)) {
+    button = [MDCButtonBarButton buttonWithType:UIButtonTypeCustom
+                                  primaryAction:buttonItem.primaryAction];
+  } else {
+    button = [[MDCButtonBarButton alloc] init];
+  }
+#else
   MDCButtonBarButton *button = [[MDCButtonBarButton alloc] init];
+#endif
   [button setBackgroundColor:[UIColor clearColor] forState:UIControlStateNormal];
   button.disabledAlpha = kDisabledButtonAlpha;
   button.enableRippleBehavior = buttonBar.enableRippleBehavior;
@@ -156,6 +167,18 @@ static const UIEdgeInsets kButtonInset = {0, 12, 0, 12};
 
   [self updateButton:button withItem:buttonItem barMetrics:UIBarMetricsDefault];
 
+#ifdef __IPHONE_13_4
+  if (@available(iOS 13.4, *)) {
+    // Because some iOS 13 betas did not have the UIPointerInteraction class, we need to verify
+    // that it exists before attempting to use it.
+    if (NSClassFromString(@"UIPointerInteraction")) {
+      UIPointerInteraction *pointerInteraction =
+          [[UIPointerInteraction alloc] initWithDelegate:buttonBar];
+      [button addInteraction:pointerInteraction];
+    }
+  }
+#endif
+
   // Contrary to intuition, UIKit provides the UIBarButtonItem as the action's first argument when
   // bar buttons are tapped, NOT the button itself. Simply adding the item's target/action to the
   // button does not allow us to pass the expected argument to the target.
@@ -165,6 +188,19 @@ static const UIEdgeInsets kButtonInset = {0, 12, 0, 12};
   [button addTarget:buttonBar
                 action:@selector(didTapButton:event:)
       forControlEvents:UIControlEventTouchUpInside];
+#if MDC_AVAILABLE_SDK_IOS(14_0)
+  if (@available(iOS 14.0, *)) {
+    if (buttonItem.menu) {
+      // Setting the menu as primary action will result in the target / action pair not being
+      // called. Setting the primaryAction on a menu item will result in it not having a target /
+      // action pair anymore and not taking a new one on until primaryAction is cleared again.
+      button.menu = buttonItem.menu;
+      if (!buttonItem.primaryAction) {
+        button.showsMenuAsPrimaryAction = YES;
+      }
+    }
+  }
+#endif
 
   UIEdgeInsets contentInsets = [MDCAppBarButtonBarBuilder
       contentInsetsForButton:button
@@ -203,9 +239,7 @@ static const UIEdgeInsets kButtonInset = {0, 12, 0, 12};
                     userInterfaceIdiom:(UIUserInterfaceIdiom)userInterfaceIdiom {
   UIEdgeInsets contentInsets = kButtonInset;
   if ([button currentImage] || [button currentTitle].length) {
-    BOOL isPad = userInterfaceIdiom == UIUserInterfaceIdiomPad;
-    CGFloat additionalInset =
-        (isPad ? kEdgeButtonAdditionalMarginPad : kEdgeButtonAdditionalMarginPhone);
+    CGFloat additionalInset = kEdgeButtonAdditionalMargin;
     BOOL isFirstButton = (layoutHints & MDCBarButtonItemLayoutHintsIsFirstButton) ==
                          MDCBarButtonItemLayoutHintsIsFirstButton;
     BOOL isLastButton = (layoutHints & MDCBarButtonItemLayoutHintsIsLastButton) ==
