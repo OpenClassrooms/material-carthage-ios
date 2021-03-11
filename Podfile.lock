@@ -63,7 +63,6 @@ PODS:
   - MaterialComponents/OverlayWindow (112.1.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/Palettes (112.1.0)
   - MaterialComponents/private/Application (112.1.0)
   - MaterialComponents/private/Color (112.1.0):
     - MaterialComponents/Availability
@@ -104,17 +103,6 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Tabs (112.1.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/Palettes
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
   - MaterialComponents/Typography (112.1.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
@@ -127,7 +115,6 @@ DEPENDENCIES:
   - MaterialComponents/FlexibleHeader
   - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight"
   - MaterialComponents/Snackbar
-  - MaterialComponents/Tabs
 
 SPEC REPOS:
   trunk:
@@ -140,6 +127,6 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
 
-PODFILE CHECKSUM: c4cb39710a4df8c126d704f32071266a2199cfb9
+PODFILE CHECKSUM: f9a0d9ab1dc9538f98bd3e143beef1d13d8d30ac
 
 COCOAPODS: 1.9.3
