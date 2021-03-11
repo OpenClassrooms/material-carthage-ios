@@ -1,6 +1,6 @@
 PODS:
-  - MaterialComponents/AnimationTiming (107.3.0)
-  - MaterialComponents/AppBar (107.3.0):
+  - MaterialComponents/AnimationTiming (112.1.0)
+  - MaterialComponents/AppBar (112.1.0):
     - MaterialComponents/FlexibleHeader
     - MaterialComponents/HeaderStackView
     - MaterialComponents/NavigationBar
@@ -11,77 +11,86 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/Availability (107.3.0)
-  - MaterialComponents/ButtonBar (107.3.0):
+  - MaterialComponents/Availability (112.1.0)
+  - MaterialComponents/ButtonBar (112.1.0):
     - MaterialComponents/Buttons
     - MaterialComponents/private/Application
     - MDFInternationalization
-  - MaterialComponents/Buttons (107.3.0):
+  - MaterialComponents/Buttons (112.1.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
     - MaterialComponents/Ripple
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/Elevation (107.3.0):
+  - MaterialComponents/Elevation (112.1.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/FlexibleHeader (107.3.0):
+  - MaterialComponents/FlexibleHeader (112.1.0):
     - MaterialComponents/Availability
     - MaterialComponents/Elevation
+    - "MaterialComponents/FlexibleHeader+ShiftBehavior"
+    - "MaterialComponents/FlexibleHeader+ShiftBehaviorEnabledWithStatusBar"
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MaterialComponents/private/UIMetrics
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MDFTextAccessibility
-  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (107.3.0)":
+  - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight (112.1.0)":
     - MaterialComponents/FlexibleHeader
-  - MaterialComponents/HeaderStackView (107.3.0)
-  - MaterialComponents/Ink (107.3.0):
+  - "MaterialComponents/FlexibleHeader+ShiftBehavior (112.1.0)"
+  - "MaterialComponents/FlexibleHeader+ShiftBehaviorEnabledWithStatusBar (112.1.0)":
+    - "MaterialComponents/FlexibleHeader+ShiftBehavior"
+  - MaterialComponents/HeaderStackView (112.1.0)
+  - MaterialComponents/Ink (112.1.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/NavigationBar (107.3.0):
+  - MaterialComponents/NavigationBar (112.1.0):
     - MaterialComponents/ButtonBar
     - MaterialComponents/Elevation
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/OverlayWindow (107.3.0):
+  - MaterialComponents/OverlayWindow (112.1.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/Palettes (107.3.0)
-  - MaterialComponents/private/Application (107.3.0)
-  - MaterialComponents/private/Color (107.3.0):
+  - MaterialComponents/private/Application (112.1.0)
+  - MaterialComponents/private/Color (112.1.0):
     - MaterialComponents/Availability
-  - MaterialComponents/private/Icons/Base (107.3.0)
-  - MaterialComponents/private/Icons/ic_arrow_back (107.3.0):
+  - MaterialComponents/private/Icons/Base (112.1.0)
+  - MaterialComponents/private/Icons/ic_arrow_back (112.1.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/KeyboardWatcher (107.3.0):
+  - MaterialComponents/private/KeyboardWatcher (112.1.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (107.3.0)
-  - MaterialComponents/private/Overlay (107.3.0)
-  - MaterialComponents/private/UIMetrics (107.3.0):
+  - MaterialComponents/private/Math (112.1.0)
+  - MaterialComponents/private/Overlay (112.1.0)
+  - MaterialComponents/private/UIMetrics (112.1.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/Ripple (107.3.0):
+  - MaterialComponents/Ripple (112.1.0):
     - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/ShadowElevations (107.3.0)
-  - MaterialComponents/ShadowLayer (107.3.0):
+  - MaterialComponents/ShadowElevations (112.1.0)
+  - MaterialComponents/ShadowLayer (112.1.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/Shapes (107.3.0):
+  - MaterialComponents/ShapeLibrary (112.1.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (112.1.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (107.3.0):
+  - MaterialComponents/Snackbar (112.1.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/Buttons
@@ -94,41 +103,30 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Tabs (107.3.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/Palettes
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - MaterialComponents/Typography (107.3.0):
+  - MaterialComponents/Typography (112.1.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
+    - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
-  - MDFTextAccessibility (2.0.0)
+  - MDFTextAccessibility (2.0.1)
 
 DEPENDENCIES:
   - MaterialComponents/AppBar
   - MaterialComponents/FlexibleHeader
   - "MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight"
   - MaterialComponents/Snackbar
-  - MaterialComponents/Tabs
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
 
 SPEC CHECKSUMS:
-  MaterialComponents: 74efa6d0c39d54850404c94352c163c6acd6cd39
+  MaterialComponents: ba54523b921faa5c2adaaa692048c6b95a09263d
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
-  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
 
-PODFILE CHECKSUM: c4cb39710a4df8c126d704f32071266a2199cfb9
+PODFILE CHECKSUM: f9a0d9ab1dc9538f98bd3e143beef1d13d8d30ac
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.3

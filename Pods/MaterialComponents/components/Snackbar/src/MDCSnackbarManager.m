@@ -14,10 +14,11 @@
 
 #import "MDCSnackbarManager.h"
 
+#import "MaterialOverlayWindow.h"
+#import "MDCSnackbarManagerDelegate.h"
 #import "MDCSnackbarMessage.h"
 #import "MDCSnackbarMessageView.h"
 #import "MaterialApplication.h"
-#import "MaterialOverlayWindow.h"
 
 #import "private/MDCSnackbarManagerInternal.h"
 #import "private/MDCSnackbarMessageInternal.h"
@@ -236,7 +237,7 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
   self.currentSnackbar = snackbarView;
   self.overlayView.accessibilityViewIsModal = snackbarView.accessibilityViewIsModal;
   self.overlayView.hidden = NO;
-  [self activateOverlay:self.overlayView];
+  [self activateOverlay:self.overlayView forMessage:message];
 
   // Once the Snackbar has finished animating on screen, start the automatic dismiss timeout, but
   // only if the user isn't running VoiceOver.
@@ -246,7 +247,7 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
             completion:^{
               if (snackbarView.accessibilityViewIsModal || message.focusOnShow ||
                   ![self isSnackbarTransient:snackbarView]) {
-                UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification,
+                UIAccessibilityPostNotification(self.manager.focusAccessibilityNotification,
                                                 snackbarView);
               } else {
                 snackbarView.accessibilityElementsHidden = YES;
@@ -269,6 +270,10 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
                 });
               }
             }];
+
+  if ([self.delegate respondsToSelector:@selector(isPresentingSnackbarWithMessageView:)]) {
+    [self.delegate isPresentingSnackbarWithMessageView:snackbarView];
+  }
 }
 
 - (MDCSnackbarOverlayView *)overlayView {
@@ -298,6 +303,10 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
                        [message executeCompletionHandlerWithUserInteraction:userPrompted
                                                                  completion:nil];
                      }];
+
+  if ([self.delegate respondsToSelector:@selector(snackbarWillDisappear)]) {
+    [self.delegate snackbarWillDisappear];
+  }
 
   [self.overlayView
       dismissSnackbarViewAnimated:YES
@@ -348,11 +357,13 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
 
 #pragma mark - Overlay Activation
 
-- (void)activateOverlay:(UIView *)overlay {
+- (void)activateOverlay:(UIView *)overlay forMessage:(MDCSnackbarMessage *)message {
   UIWindow *window = [self bestGuessWindow];
   UIView *targetView = nil;
 
-  if (self.presentationHostView) {
+  if (message.presentationHostViewOverride) {
+    targetView = message.presentationHostViewOverride;
+  } else if (self.presentationHostView) {
     targetView = self.presentationHostView;
   } else if ([window isKindOfClass:[MDCOverlayWindow class]]) {
     // If the application's window is an overlay window, take advantage of it. Otherwise, just add
@@ -572,6 +583,7 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
     _messageElevation = MDCShadowElevationSnackbar;
     _adjustsFontForContentSizeCategoryWhenScaledFontIsUnavailable = YES;
     _mdc_overrideBaseElevation = -1;
+    _focusAccessibilityNotification = UIAccessibilityLayoutChangedNotification;
   }
   return self;
 }
@@ -891,7 +903,7 @@ static NSString *const kAllMessagesCategory = @"$$___ALL_MESSAGES___$$";
 
 @end
 
-@implementation MDCSnackbarManager (LegacyAPI)
+@implementation MDCSnackbarManager (ToBeDeprecated)
 
 + (MDCSnackbarAlignment)alignment {
   return MDCSnackbarManager.defaultManager.alignment;

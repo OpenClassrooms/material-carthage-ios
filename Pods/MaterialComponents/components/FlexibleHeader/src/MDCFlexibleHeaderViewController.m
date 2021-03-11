@@ -14,15 +14,18 @@
 
 #import "MDCFlexibleHeaderViewController.h"
 
-#import <MDFTextAccessibility/MDFTextAccessibility.h>
-#import "MDCFlexibleHeaderContainerViewController.h"
-#import "MDCFlexibleHeaderView+ShiftBehavior.h"
-#import "MDCFlexibleHeaderView.h"
-#import "MaterialApplication.h"
-#import "MaterialAvailability.h"
-#import "MaterialUIMetrics.h"
 #import "private/MDCFlexibleHeaderHairline.h"
 #import "private/MDCFlexibleHeaderView+Private.h"
+#import "MaterialAvailability.h"
+#import "MDCFlexibleHeaderContainerViewController.h"
+#import "MDCFlexibleHeaderSafeAreaDelegate.h"
+#import "MDCFlexibleHeaderView+ShiftBehavior.h"
+#import "MDCFlexibleHeaderView.h"
+#import "MDCFlexibleHeaderViewLayoutDelegate.h"
+#import "MaterialFlexibleHeader+ShiftBehaviorEnabledWithStatusBar.h"
+#import "MaterialApplication.h"
+#import "MaterialUIMetrics.h"
+#import <MDFTextAccessibility/MDFTextAccessibility.h>
 
 @interface UIView ()
 - (UIEdgeInsets)safeAreaInsets;  // For pre-iOS 11 SDK targets.
@@ -95,6 +98,10 @@ static char *const kKVOContextMDCFlexibleHeaderViewController =
  Supports the behavior of showing a narrow line at the bottom edge of the flexible header view.
  */
 @property(nonatomic, strong) MDCFlexibleHeaderHairline *hairline;
+
+@property(nonatomic, getter=isTopLayoutGuideAdjustmentEnabled) BOOL topLayoutGuideAdjustmentEnabled;
+@property(nonatomic)
+    BOOL permitInferringTopSafeAreaFromTopLayoutGuideViewController NS_AVAILABLE_IOS(11.0);
 
 @end
 
