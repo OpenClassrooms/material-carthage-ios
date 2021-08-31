@@ -390,7 +390,7 @@
 		17824B00BEF6B2A96355BCF4BDCB9AE4 /* MDCLayoutMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCLayoutMetrics.h; path = components/private/UIMetrics/src/MDCLayoutMetrics.h; sourceTree = "<group>"; };
 		178DE6D3B1858F65BEEFC076B6746A59 /* MaterialComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-prefix.pch"; sourceTree = "<group>"; };
 		17B063F95E4E9C4839669D2301D1C70E /* MaterialShapeLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShapeLibrary.h; path = components/ShapeLibrary/src/MaterialShapeLibrary.h; sourceTree = "<group>"; };
-		1886C8AC16286D43E91ACD04E27BB271 /* Pods_material_carthage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_material_carthage_ios.framework; path = "Pods-material-carthage-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1886C8AC16286D43E91ACD04E27BB271 /* Pods_material_carthage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1887025E4C81F59AF1E097966941EED0 /* UIFont+MaterialScalable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+MaterialScalable.m"; path = "components/Typography/src/UIFont+MaterialScalable.m"; sourceTree = "<group>"; };
 		18E422C61F6787BEA1DF8A8B47F760CB /* MDFTextAccessibility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MDFTextAccessibility.debug.xcconfig; sourceTree = "<group>"; };
 		18F5D0D6694E5CA9EA4093738BF01830 /* MDCFlexibleHeaderTopSafeAreaDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFlexibleHeaderTopSafeAreaDelegate.h; path = components/FlexibleHeader/src/private/MDCFlexibleHeaderTopSafeAreaDelegate.h; sourceTree = "<group>"; };
@@ -411,7 +411,7 @@
 		21BB06C1B9864B41293863DBE4525D5B /* MaterialKeyboardWatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialKeyboardWatcher.h; path = components/private/KeyboardWatcher/src/MaterialKeyboardWatcher.h; sourceTree = "<group>"; };
 		21E0047D32C2924FAE3AB5652019952C /* MDCAppBarNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAppBarNavigationController.h; path = components/AppBar/src/MDCAppBarNavigationController.h; sourceTree = "<group>"; };
 		21F1277CE84E122291DC371E106D46FA /* MaterialNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialNavigationBar.h; path = components/NavigationBar/src/MaterialNavigationBar.h; sourceTree = "<group>"; };
-		223007ECD9FA4D4260AD700D9F6A0C26 /* Pods_material_carthage_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_material_carthage_iosTests.framework; path = "Pods-material-carthage-iosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		223007ECD9FA4D4260AD700D9F6A0C26 /* Pods_material_carthage_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2293438DCEEC764A4E7DA7988621EBE2 /* Pods-material-carthage-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-material-carthage-ios-acknowledgements.plist"; sourceTree = "<group>"; };
 		22F99C9A034F1B6C756E93EDCC3C0A19 /* MDCTypography.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTypography.h; path = components/Typography/src/MDCTypography.h; sourceTree = "<group>"; };
 		2473BBD319514EAA5D9F5A9ECF1F33C9 /* Pods-material-carthage-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-material-carthage-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -532,25 +532,25 @@
 		8B021C466948CC1D988788AE14B2837A /* MDCSnackbarMessageInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSnackbarMessageInternal.h; path = components/Snackbar/src/private/MDCSnackbarMessageInternal.h; sourceTree = "<group>"; };
 		8D10AF73085596CDA625D3F985A1D1B3 /* MDCFlexibleHeaderSafeAreaDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFlexibleHeaderSafeAreaDelegate.h; path = components/FlexibleHeader/src/MDCFlexibleHeaderSafeAreaDelegate.h; sourceTree = "<group>"; };
 		924FFD3D68D11497264F2021A1898778 /* UIView+MaterialElevationResponding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MaterialElevationResponding.m"; path = "components/Elevation/src/UIView+MaterialElevationResponding.m"; sourceTree = "<group>"; };
-		926DA190C7D642F031F184C79D52F1F7 /* MaterialIcons_ic_arrow_back.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MaterialIcons_ic_arrow_back.bundle; path = "MaterialComponents-MaterialIcons_ic_arrow_back.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		926DA190C7D642F031F184C79D52F1F7 /* MaterialIcons_ic_arrow_back.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialIcons_ic_arrow_back.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		92966891851B2CD792A592BE2B11B6A2 /* MDCEdgeTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCEdgeTreatment.h; path = components/Shapes/src/MDCEdgeTreatment.h; sourceTree = "<group>"; };
 		92F8F40B17645EBE79290242B9A320E7 /* MDFTextAccessibility-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFTextAccessibility-prefix.pch"; sourceTree = "<group>"; };
 		95AE4977E80C6F49C1F1B0953848FD41 /* Pods-material-carthage-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-material-carthage-ios-Info.plist"; sourceTree = "<group>"; };
 		95B2906CF3721EA15D6F02999C57EB66 /* MDFImageCalculations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFImageCalculations.h; path = src/private/MDFImageCalculations.h; sourceTree = "<group>"; };
 		98A653A137EA11338C14E1C737989429 /* MDCCurvedRectShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCurvedRectShapeGenerator.m; path = components/ShapeLibrary/src/MDCCurvedRectShapeGenerator.m; sourceTree = "<group>"; };
-		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization.framework; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B35FD7434CFE369071DA07F4FE62885 /* MDCCurvedCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCurvedCornerTreatment.h; path = components/ShapeLibrary/src/MDCCurvedCornerTreatment.h; sourceTree = "<group>"; };
 		9B67A74470213B6CDED5D27AC7DE5AB5 /* MDCFlexibleHeaderHairline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFlexibleHeaderHairline.m; path = components/FlexibleHeader/src/private/MDCFlexibleHeaderHairline.m; sourceTree = "<group>"; };
 		9B98F1D29C962778AF1627CFF39CD419 /* UIFont+MaterialSimpleEquality.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+MaterialSimpleEquality.m"; path = "components/Typography/src/UIFont+MaterialSimpleEquality.m"; sourceTree = "<group>"; };
 		9C086D4391B8E434901E98A1BB1050AD /* Pods-material-carthage-iosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-material-carthage-iosTests-dummy.m"; sourceTree = "<group>"; };
 		9D19A49FDD091016A264014305C544F7 /* MDCIcons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCIcons.h; path = components/private/Icons/src/MDCIcons.h; sourceTree = "<group>"; };
 		9D241FC0814C948B1769E43E3D1BACCB /* MDCRoundedCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRoundedCornerTreatment.h; path = components/ShapeLibrary/src/MDCRoundedCornerTreatment.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DAFD01A6124771F87D6A9B89B4D1643 /* Pods-material-carthage-iosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-material-carthage-iosTests-umbrella.h"; sourceTree = "<group>"; };
 		A200B36083E37D2CC128606B6803B617 /* CAMediaTimingFunction+MDCAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+MDCAnimationTiming.h"; path = "components/AnimationTiming/src/CAMediaTimingFunction+MDCAnimationTiming.h"; sourceTree = "<group>"; };
 		A20E9805DB166B756E1591D01D7621F5 /* MDCSnackbarManagerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSnackbarManagerInternal.h; path = components/Snackbar/src/private/MDCSnackbarManagerInternal.h; sourceTree = "<group>"; };
 		A27357A954FE3D5AC369BE27869499B6 /* MaterialHeaderStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialHeaderStackView.h; path = components/HeaderStackView/src/MaterialHeaderStackView.h; sourceTree = "<group>"; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A348568DC9436F14D19FA7876678B354 /* MDCFloatingButton+Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDCFloatingButton+Animation.h"; path = "components/Buttons/src/MDCFloatingButton+Animation.h"; sourceTree = "<group>"; };
 		A35E9EEBBF7753524F2B07C4A0A84F90 /* MDCSnackbarMessageViewInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSnackbarMessageViewInternal.h; path = components/Snackbar/src/private/MDCSnackbarMessageViewInternal.h; sourceTree = "<group>"; };
 		A3C50970F3748D3D4964B87C85382242 /* MDCFloatingButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFloatingButton.m; path = components/Buttons/src/MDCFloatingButton.m; sourceTree = "<group>"; };
@@ -656,7 +656,7 @@
 		F9EA79F411C7B68BED2A961B4D22C932 /* MaterialShadowElevations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowElevations.h; path = components/ShadowElevations/src/MaterialShadowElevations.h; sourceTree = "<group>"; };
 		FACA863B7C1137D3F9761BF11B4A4BC3 /* MaterialComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-umbrella.h"; sourceTree = "<group>"; };
 		FAD2618F29745560B0BD3B3EC6336AFA /* MDCLegacyInkLayer+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDCLegacyInkLayer+Private.h"; path = "components/Ink/src/private/MDCLegacyInkLayer+Private.h"; sourceTree = "<group>"; };
-		FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFTextAccessibility.framework; path = MDFTextAccessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFTextAccessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD90D11646800513C6B57D2BB8562576 /* MDCSnackbarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSnackbarManager.m; path = components/Snackbar/src/MDCSnackbarManager.m; sourceTree = "<group>"; };
 		FDF51B9ED4FBB3880EFA380DE17E194A /* MDCMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCMath.h; path = components/private/Math/src/MDCMath.h; sourceTree = "<group>"; };
 		FEF19FD43BD649196208FCC5B8463CB9 /* MaterialAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAnimationTiming.h; path = components/AnimationTiming/src/MaterialAnimationTiming.h; sourceTree = "<group>"; };
@@ -821,7 +821,6 @@
 				E121AC32697F0FF2CC450990FF2C9A8C /* NSArray+MDFUtils.m */,
 				5DC3DB1608192342D59D4A59D95D82FE /* Support Files */,
 			);
-			name = MDFTextAccessibility;
 			path = MDFTextAccessibility;
 			sourceTree = "<group>";
 		};
@@ -852,7 +851,6 @@
 				D0A417D936D2D15025819420779ED35A /* Support Files */,
 				D7EDFE54A845AB93DD54AF2EA44D0322 /* Typography */,
 			);
-			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
@@ -1074,7 +1072,6 @@
 				CF86C042228F2A7302B402B31BEB4143 /* UIView+MaterialRTL.m */,
 				2E27B2F2854CAD6282D729CB2DDFA8C3 /* Support Files */,
 			);
-			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -1739,7 +1736,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1250;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -2012,7 +2009,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2049,7 +2046,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2085,7 +2082,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2120,7 +2117,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2154,7 +2151,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2182,7 +2179,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MaterialComponents";
 				IBSC_MODULE = MaterialComponents;
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/ResourceBundle-MaterialIcons_ic_arrow_back-MaterialComponents-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MaterialIcons_ic_arrow_back;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2206,7 +2203,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2241,7 +2238,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2270,7 +2267,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MaterialComponents";
 				IBSC_MODULE = MaterialComponents;
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/ResourceBundle-MaterialIcons_ic_arrow_back-MaterialComponents-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MaterialIcons_ic_arrow_back;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2328,7 +2325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2355,7 +2352,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2426,7 +2423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2454,7 +2451,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2489,7 +2486,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
