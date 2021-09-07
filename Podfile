@@ -6,6 +6,7 @@ target 'material-carthage-ios' do
   pod 'MaterialComponents/AppBar'
   pod 'MaterialComponents/FlexibleHeader'
   pod 'MaterialComponents/FlexibleHeader+CanAlwaysExpandToMaximumHeight'
+  pod 'MaterialComponents/TextControls+FilledTextFields'
   pod 'MaterialComponents/Snackbar'
 
   target 'material-carthage-iosTests' do
