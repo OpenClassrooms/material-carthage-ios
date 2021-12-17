@@ -9,12 +9,21 @@ import MaterialComponents
 
 class material_carthage_iosTests: XCTestCase {
 
-    func test_WhenCreatingMaterialComponent_ThenItCreatesIt() {
+    func test_WhenCreatingMaterialComponents_ThenItCreatesThem() {
 
-        let view = MDCFlexibleHeaderView()
-        XCTAssertNotNil(view)
+        let activityIndicator = MDCActivityIndicator()
+        XCTAssertNotNil(activityIndicator)
 
-        let snackBar = MDCSnackbarMessageView()
-        XCTAssertNotNil(snackBar)
+        let flexibleHeaderView = MDCFlexibleHeaderView()
+        XCTAssertNotNil(flexibleHeaderView)
+
+        let textArea = MDCFilledTextArea()
+        XCTAssertNotNil(textArea)
+
+        let textField = MDCFilledTextField()
+        XCTAssertNotNil(textField)
+
+        let snackbar = MDCSnackbarMessageView()
+        XCTAssertNotNil(snackbar)
     }
 }
