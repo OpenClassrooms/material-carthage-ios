@@ -14,6 +14,9 @@ class material_carthage_iosTests: XCTestCase {
         let activityIndicator = MDCActivityIndicator()
         XCTAssertNotNil(activityIndicator)
 
+        let appBar = MDCAppBar()
+        XCTAssertNotNil(appBar)
+
         let flexibleHeaderView = MDCFlexibleHeaderView()
         XCTAssertNotNil(flexibleHeaderView)
 
