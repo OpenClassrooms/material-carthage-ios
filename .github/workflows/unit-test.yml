@@ -4,6 +4,7 @@ on: [push, pull_request]
 jobs:
   unit-test:
     name: Check unit test
+    timeout-minutes: 30
     runs-on: macos-11
     steps:
       - name: Set Xcode
