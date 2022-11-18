@@ -15,6 +15,8 @@
 #import <UIKit/UIKit.h>
 
 #import "MDCButtonBarButton.h"
+#import "MaterialButtons.h"
+#import "MaterialInk.h"
 
 static const CGFloat kMinimumItemWidth = 36;
 
@@ -55,6 +57,37 @@ static const CGFloat kMinimumItemWidth = 36;
 // re-define in our implementation. Therefore, this method just calls [super].
 - (void)setTitleFont:(nullable UIFont *)font forState:(UIControlState)state {
   [super setTitleFont:font forState:state];
+}
+
+#pragma mark - UILargeContentViewerItem
+
+- (BOOL)showsLargeContentViewer {
+  return YES;
+}
+
+- (NSString *)largeContentTitle {
+  if (_largeContentTitle) {
+    return _largeContentTitle;
+  }
+
+  NSString *title = [self titleForState:UIControlStateNormal];
+  if (!title && self.largeContentImage) {
+    return self.accessibilityLabel;
+  }
+
+  return title;
+}
+
+- (UIImage *)largeContentImage {
+  if (_largeContentImage) {
+    return _largeContentImage;
+  }
+
+  return [self imageForState:UIControlStateNormal];
+}
+
+- (BOOL)scalesLargeContentImage {
+  return _largeContentImage == nil;
 }
 
 @end

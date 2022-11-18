@@ -14,6 +14,9 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import "MaterialButtons.h"
+#import "MaterialElevation.h"
+#import "MaterialShadowElevations.h"
 #import "MDCSnackbarManager.h"
 #import "MDCSnackbarMessage.h"
 #import "MDCSnackbarMessageView.h"
@@ -685,7 +688,7 @@ static const MDCFontTextStyle kButtonTextStyle = MDCFontTextStyleButton;
 - (NSInteger)numberOfLines {
   CGSize maxLabelSize = self.label.intrinsicContentSize;
   CGFloat lineHeight = self.label.font.lineHeight;
-  return (NSInteger)MDCRound(maxLabelSize.height / lineHeight);
+  return (NSInteger)round(maxLabelSize.height / lineHeight);
 }
 
 - (void)resetConstraints {
