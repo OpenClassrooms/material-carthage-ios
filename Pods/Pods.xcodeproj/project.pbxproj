@@ -84,6 +84,7 @@
 		2378F8D90DC679A6EB2C7BF33C5F7845 /* CATransaction+MotionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3491DA35CEF9609F3706458674FFC3 /* CATransaction+MotionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2413B5B1D2B535BDC295543FFDCB6EA8 /* MDCSnackbarOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542472038A058902F4B6F024453C20B5 /* MDCSnackbarOverlayView.m */; };
 		24838D51EDD7104959A5163367BFE0B2 /* MDCSnackbarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB980AE50480B52B5E8E4DEDAA16D7C /* MDCSnackbarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24A30389BB1052D82CF073085D7D2713 /* MaterialComponents-MaterialIcons_ic_arrow_back in Resources */ = {isa = PBXBuildFile; fileRef = 926DA190C7D642F031F184C79D52F1F7 /* MaterialComponents-MaterialIcons_ic_arrow_back */; };
 		24B28140FBF045132E9E54393AA2A525 /* UIView+MaterialElevationResponding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079E24922BBE75BD7A385F30D5C06D3 /* UIView+MaterialElevationResponding.m */; };
 		24FB6DF4C12AD7F603A238A39576AC33 /* MDMRepetitionOverTime.h in Headers */ = {isa = PBXBuildFile; fileRef = C69E5DA342C017C9E97A17C1FBCC2B5A /* MDMRepetitionOverTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25ABCCB506CD51393434BE44F446AD5F /* MDFInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D156537AE0C55BFFA1F776EC96487AF /* MDFInternationalization-dummy.m */; };
@@ -440,6 +441,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
 			remoteInfo = MaterialComponents;
+		};
+		6EC0064E1C0A2B3BAD266302A35E06FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF90696196F65237863CD68D1E0BF679;
+			remoteInfo = "MaterialComponents-MaterialIcons_ic_arrow_back";
 		};
 		7C6BC00D95E0DE5EB2D145A8324D0569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2823,6 +2831,12 @@
 			name = MotionInterchange;
 			target = 9A396D19079F48F8B3D75B45788F874B /* MotionInterchange */;
 			targetProxy = C898F95DE0A60845E1F01A1A9F6A7793 /* PBXContainerItemProxy */;
+		};
+		11E677C957084BCF81936A750120CE8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MaterialComponents-MaterialIcons_ic_arrow_back";
+			target = DF90696196F65237863CD68D1E0BF679 /* MaterialComponents-MaterialIcons_ic_arrow_back */;
+			targetProxy = 6EC0064E1C0A2B3BAD266302A35E06FA /* PBXContainerItemProxy */;
 		};
 		49C633F14088D8DEA2FDFC85052E9842 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

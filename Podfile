@@ -10,6 +10,20 @@ target 'material-carthage-ios' do
 
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
       end
+
+      # Remove `MaterialIcons_ic_arrow_back` resource bundle from `MaterialComponents`
+      if target.name == 'MaterialComponents' 
+
+        target.dependencies.reject! do |target|
+          target.name == "MaterialComponents-MaterialIcons_ic_arrow_back"
+        end
+
+        target.build_phases.each do |build_phases|
+          build_phases.files.reject! do |file|
+            file.display_name == "MaterialComponents-MaterialIcons_ic_arrow_back"
+          end
+        end
+      end
     end
   end
 
