@@ -8,7 +8,7 @@ target 'material-carthage-ios' do
 
         config.build_settings['ENABLE_BITCODE'] = 'YES'
 
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
       end
 
       # Remove `MaterialIcons_ic_arrow_back` resource bundle from `MaterialComponents`
