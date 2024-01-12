@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -84,7 +84,6 @@
 		2378F8D90DC679A6EB2C7BF33C5F7845 /* CATransaction+MotionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3491DA35CEF9609F3706458674FFC3 /* CATransaction+MotionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2413B5B1D2B535BDC295543FFDCB6EA8 /* MDCSnackbarOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 542472038A058902F4B6F024453C20B5 /* MDCSnackbarOverlayView.m */; };
 		24838D51EDD7104959A5163367BFE0B2 /* MDCSnackbarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB980AE50480B52B5E8E4DEDAA16D7C /* MDCSnackbarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24A30389BB1052D82CF073085D7D2713 /* MaterialComponents-MaterialIcons_ic_arrow_back in Resources */ = {isa = PBXBuildFile; fileRef = 926DA190C7D642F031F184C79D52F1F7 /* MaterialComponents-MaterialIcons_ic_arrow_back */; };
 		24B28140FBF045132E9E54393AA2A525 /* UIView+MaterialElevationResponding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079E24922BBE75BD7A385F30D5C06D3 /* UIView+MaterialElevationResponding.m */; };
 		24FB6DF4C12AD7F603A238A39576AC33 /* MDMRepetitionOverTime.h in Headers */ = {isa = PBXBuildFile; fileRef = C69E5DA342C017C9E97A17C1FBCC2B5A /* MDMRepetitionOverTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25ABCCB506CD51393434BE44F446AD5F /* MDFInternationalization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D156537AE0C55BFFA1F776EC96487AF /* MDFInternationalization-dummy.m */; };
@@ -442,13 +441,6 @@
 			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
 			remoteInfo = MaterialComponents;
 		};
-		6EC0064E1C0A2B3BAD266302A35E06FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF90696196F65237863CD68D1E0BF679;
-			remoteInfo = "MaterialComponents-MaterialIcons_ic_arrow_back";
-		};
 		7C6BC00D95E0DE5EB2D145A8324D0569 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -580,7 +572,7 @@
 		177D6EB3FE83FF3B420DAF9AF4CE70F6 /* MDFTextAccessibility-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDFTextAccessibility-Bridging-Header.h"; path = "src/MDFTextAccessibility-Bridging-Header.h"; sourceTree = "<group>"; };
 		17ED4428262A5048FCDE5417F36A35EA /* MDCTextControlLabelBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelBehavior.h; path = components/TextControls/src/Enums/MDCTextControlLabelBehavior.h; sourceTree = "<group>"; };
 		185BA95038124071EADA6DC3AC1F86CD /* MDCBaseTextAreaLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextAreaLayout.m; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaLayout.m; sourceTree = "<group>"; };
-		1886C8AC16286D43E91ACD04E27BB271 /* Pods-material-carthage-ios */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-material-carthage-ios"; path = Pods_material_carthage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1886C8AC16286D43E91ACD04E27BB271 /* Pods_material_carthage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E0945A46A81F741E1F507367EDA090 /* MDCAppBarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCAppBarViewController.m; path = components/AppBar/src/MDCAppBarViewController.m; sourceTree = "<group>"; };
 		18E5A3A242BEF6F90229588BF7F8F8FC /* MDCBaseTextArea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextArea.h; path = components/TextControls/src/BaseTextAreas/MDCBaseTextArea.h; sourceTree = "<group>"; };
 		190CFAA7C17F1DC2411893CE892A6851 /* MDMAnimatableKeyPaths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDMAnimatableKeyPaths.h; path = src/MDMAnimatableKeyPaths.h; sourceTree = "<group>"; };
@@ -604,7 +596,7 @@
 		205CEF4CD5282B5023FE3904EF116D62 /* MDCTextControlVerticalPositioningReferenceFilled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceFilled.h; path = components/private/TextControlsPrivate/src/FilledStyle/MDCTextControlVerticalPositioningReferenceFilled.h; sourceTree = "<group>"; };
 		2112DAF0473366108B710F5BD0515E28 /* MDCAppBarButtonBarBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCAppBarButtonBarBuilder.m; path = components/ButtonBar/src/private/MDCAppBarButtonBarBuilder.m; sourceTree = "<group>"; };
 		219EBCA180FD6F9BE8026B10D4E59291 /* MDCShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShadowLayer.m; path = components/ShadowLayer/src/MDCShadowLayer.m; sourceTree = "<group>"; };
-		223007ECD9FA4D4260AD700D9F6A0C26 /* Pods-material-carthage-iosTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-material-carthage-iosTests"; path = Pods_material_carthage_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		223007ECD9FA4D4260AD700D9F6A0C26 /* Pods_material_carthage_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2293438DCEEC764A4E7DA7988621EBE2 /* Pods-material-carthage-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-material-carthage-ios-acknowledgements.plist"; sourceTree = "<group>"; };
 		23AF6B3B1CEF0951541DC5EA0DF77FF1 /* MDCShapedShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapedShadowLayer.m; path = components/Shapes/src/MDCShapedShadowLayer.m; sourceTree = "<group>"; };
 		23B9299CFD922CA6A44C9CF685075F97 /* UIImage+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MaterialRTL.m"; path = "Sources/UIImage+MaterialRTL.m"; sourceTree = "<group>"; };
@@ -651,7 +643,7 @@
 		3D1B344056F72EE18F54E22E316394F4 /* MDCAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAvailability.h; path = components/Availability/src/MDCAvailability.h; sourceTree = "<group>"; };
 		3D1B5158D7CE1A8F1245E8B621473063 /* MDCTextControlHorizontalPositioningReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlHorizontalPositioningReference.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlHorizontalPositioningReference.h; sourceTree = "<group>"; };
 		3D7C585EB83D73D5288CC201EC8C5437 /* MaterialFlexibleHeader+CanAlwaysExpandToMaximumHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialFlexibleHeader+CanAlwaysExpandToMaximumHeight.h"; path = "components/FlexibleHeader/src/CanAlwaysExpandToMaximumHeight/MaterialFlexibleHeader+CanAlwaysExpandToMaximumHeight.h"; sourceTree = "<group>"; };
-		3DB47A6C65F93C42BC5C238DBE91BBE8 /* MotionInterchange */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MotionInterchange; path = MotionInterchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB47A6C65F93C42BC5C238DBE91BBE8 /* MotionInterchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MotionInterchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E157EBAA4FA0A1B44FAFE5879781BE7 /* MotionAnimator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MotionAnimator.release.xcconfig; sourceTree = "<group>"; };
 		3E8337A0BD9D585753E83A5CF8DD6A3D /* MDCRippleTouchControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRippleTouchControllerDelegate.h; path = components/Ripple/src/MDCRippleTouchControllerDelegate.h; sourceTree = "<group>"; };
 		3F11E4E8A75AFE273622C2058594F77B /* MDCTextControlVerticalPositioningReferenceUnderlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceUnderlined.m; path = components/private/TextControlsPrivate/src/UnderlinedStyle/MDCTextControlVerticalPositioningReferenceUnderlined.m; sourceTree = "<group>"; };
@@ -793,7 +785,7 @@
 		9094555365DA926416C2A8613055E635 /* MDCFlexibleHeaderViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFlexibleHeaderViewDelegate.h; path = components/FlexibleHeader/src/MDCFlexibleHeaderViewDelegate.h; sourceTree = "<group>"; };
 		9114E6E33AD67948CEB9CBAAC232E8DF /* MaterialActivityIndicatorStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialActivityIndicatorStrings.h; path = components/ActivityIndicator/src/private/MaterialActivityIndicatorStrings.h; sourceTree = "<group>"; };
 		9201363AC8DDA05F5D52A2432D214FAE /* MaterialAnimationTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAnimationTiming.h; path = components/AnimationTiming/src/MaterialAnimationTiming.h; sourceTree = "<group>"; };
-		926DA190C7D642F031F184C79D52F1F7 /* MaterialComponents-MaterialIcons_ic_arrow_back */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MaterialComponents-MaterialIcons_ic_arrow_back"; path = MaterialIcons_ic_arrow_back.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		926DA190C7D642F031F184C79D52F1F7 /* MaterialIcons_ic_arrow_back.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialIcons_ic_arrow_back.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		926FE3915E42640AB9368353CFB2BE45 /* MDCTextControlAssistiveLabelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlAssistiveLabelView.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlAssistiveLabelView.m; sourceTree = "<group>"; };
 		933DF2C4F5C86DF54791E08C64B20C36 /* MDCHeaderStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCHeaderStackView.m; path = components/HeaderStackView/src/MDCHeaderStackView.m; sourceTree = "<group>"; };
 		937CE53D5DD12331D982E4110CA8AA40 /* MDCFloatingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCFloatingButton.h; path = components/Buttons/src/MDCFloatingButton.h; sourceTree = "<group>"; };
@@ -807,10 +799,10 @@
 		9933DCF8BAF033E33A52B7AD4C6BB063 /* MaterialShadowElevations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowElevations.h; path = components/ShadowElevations/src/MaterialShadowElevations.h; sourceTree = "<group>"; };
 		99A11E17C444EA5EFFDB4EB630B3214C /* MDCRippleLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRippleLayer.m; path = components/Ripple/src/private/MDCRippleLayer.m; sourceTree = "<group>"; };
 		99DC493EDA3D9FE9698547AF6A6EFD28 /* MaterialApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialApplication.h; path = components/private/Application/src/MaterialApplication.h; sourceTree = "<group>"; };
-		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7DA060AADA38567876D9F4212D0FC0 /* MDCTextControlLabelSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelSupport.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelSupport.h; sourceTree = "<group>"; };
 		9C086D4391B8E434901E98A1BB1050AD /* Pods-material-carthage-iosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-material-carthage-iosTests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DAFD01A6124771F87D6A9B89B4D1643 /* Pods-material-carthage-iosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-material-carthage-iosTests-umbrella.h"; sourceTree = "<group>"; };
 		9DCF9A24D8BD8CE35369B3297B52FFF1 /* MDMRepetitionOverTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDMRepetitionOverTime.m; path = src/MDMRepetitionOverTime.m; sourceTree = "<group>"; };
 		9ED99FA13E56CCBA6B5426EF3CFDA302 /* MDCBaseTextAreaTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextAreaTextView.h; path = components/TextControls/src/BaseTextAreas/private/MDCBaseTextAreaTextView.h; sourceTree = "<group>"; };
@@ -820,7 +812,7 @@
 		A13FD65EFDC10FAEE8A62384DD71837A /* MaterialAppBarStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAppBarStrings.h; path = components/AppBar/src/private/MaterialAppBarStrings.h; sourceTree = "<group>"; };
 		A16CDD1D9E3E60726E0760FEB4FB601E /* MDCTextControlLabelAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlLabelAnimation.h; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlLabelAnimation.h; sourceTree = "<group>"; };
 		A25BA510347766036D5A2F78AD37D60C /* MDCIcons+BundleLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDCIcons+BundleLoader.h"; path = "components/private/Icons/src/MDCIcons+BundleLoader.h"; sourceTree = "<group>"; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39B7EBABD897CD23044410C67FDE94C /* MDCBaseTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextField.h; path = components/TextControls/src/BaseTextFields/MDCBaseTextField.h; sourceTree = "<group>"; };
 		A3C1BEFF5B950F899A298BE714C54C98 /* MDCFlexibleHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCFlexibleHeaderView.m; path = components/FlexibleHeader/src/MDCFlexibleHeaderView.m; sourceTree = "<group>"; };
 		A3D1ED996042D1CCE989B724F634BEA6 /* MaterialFlexibleHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialFlexibleHeader.h; path = components/FlexibleHeader/src/MaterialFlexibleHeader.h; sourceTree = "<group>"; };
@@ -834,7 +826,7 @@
 		A6E2DF8006CE2CCC05DBCC117D25027C /* MDCPalettes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPalettes.h; path = components/Palettes/src/MDCPalettes.h; sourceTree = "<group>"; };
 		A78442CA3C7A0CBA56B4A6482777E882 /* MDMRepetition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDMRepetition.h; path = src/MDMRepetition.h; sourceTree = "<group>"; };
 		A8023BED890BFE7379664144155B7DF9 /* MDCAppBarContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAppBarContainerViewController.h; path = components/AppBar/src/MDCAppBarContainerViewController.h; sourceTree = "<group>"; };
-		A839CC75AF71B92A54EEB16D9B2C6C4C /* MotionAnimator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MotionAnimator; path = MotionAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A839CC75AF71B92A54EEB16D9B2C6C4C /* MotionAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MotionAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1D3C4022A749B0FA409D8C531E105F /* UIView+MDCTimingFunction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCTimingFunction.h"; path = "components/AnimationTiming/src/UIView+MDCTimingFunction.h"; sourceTree = "<group>"; };
 		AB7F6CBE04D9B7C0E0FF7A1625315204 /* MDCInkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCInkView.h; path = components/Ink/src/MDCInkView.h; sourceTree = "<group>"; };
 		AC1545892CBEB9951D03969246D05D79 /* MDCSnackbarOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSnackbarOverlayView.h; path = components/Snackbar/src/private/MDCSnackbarOverlayView.h; sourceTree = "<group>"; };
@@ -971,7 +963,7 @@
 		FA360521AC2C1F223513F55F71B3C7C3 /* MaterialFlexibleHeader+ShiftBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialFlexibleHeader+ShiftBehavior.h"; path = "components/FlexibleHeader/src/ShiftBehavior/MaterialFlexibleHeader+ShiftBehavior.h"; sourceTree = "<group>"; };
 		FA3F5018614875D4D6597B428A4B447F /* CAMediaTimingFunction+MotionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAMediaTimingFunction+MotionAnimator.m"; path = "src/private/CAMediaTimingFunction+MotionAnimator.m"; sourceTree = "<group>"; };
 		FABA18129D7E5227ED8A6AC7793990FC /* MDCRippleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRippleView.m; path = components/Ripple/src/MDCRippleView.m; sourceTree = "<group>"; };
-		FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFTextAccessibility; path = MDFTextAccessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFTextAccessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2C3873405D42FCC16ADAE252EE4BA4 /* MDFInternationalization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFInternationalization-umbrella.h"; sourceTree = "<group>"; };
 		FCDFAE2252FB6AD25D3BCD4055E7492B /* NSLocale+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+MaterialRTL.m"; path = "Sources/NSLocale+MaterialRTL.m"; sourceTree = "<group>"; };
 		FD24F7159AA302D3818C9F1D7F3353FB /* MDCRectangleShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRectangleShapeGenerator.m; path = components/Shapes/src/MDCRectangleShapeGenerator.m; sourceTree = "<group>"; };
@@ -1083,7 +1075,6 @@
 				9471ED4E2AE49D208417385FEA481D4B /* MotionInterchange.h */,
 				3E19E61288B632C25C1C260ADE712D7B /* Support Files */,
 			);
-			name = MotionInterchange;
 			path = MotionInterchange;
 			sourceTree = "<group>";
 		};
@@ -1465,7 +1456,6 @@
 				1EFC15F63EE391E9ECF71F6C8BD862C5 /* MotionAnimator.h */,
 				65BADBE7F106ACB9F0245E127DA4EF21 /* Support Files */,
 			);
-			name = MotionAnimator;
 			path = MotionAnimator;
 			sourceTree = "<group>";
 		};
@@ -1538,14 +1528,14 @@
 		7BBABC62DD6AC3B172AE01822412928F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */,
-				926DA190C7D642F031F184C79D52F1F7 /* MaterialComponents-MaterialIcons_ic_arrow_back */,
-				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */,
-				FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility */,
-				A839CC75AF71B92A54EEB16D9B2C6C4C /* MotionAnimator */,
-				3DB47A6C65F93C42BC5C238DBE91BBE8 /* MotionInterchange */,
-				1886C8AC16286D43E91ACD04E27BB271 /* Pods-material-carthage-ios */,
-				223007ECD9FA4D4260AD700D9F6A0C26 /* Pods-material-carthage-iosTests */,
+				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */,
+				926DA190C7D642F031F184C79D52F1F7 /* MaterialIcons_ic_arrow_back.bundle */,
+				9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */,
+				FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */,
+				A839CC75AF71B92A54EEB16D9B2C6C4C /* MotionAnimator.framework */,
+				3DB47A6C65F93C42BC5C238DBE91BBE8 /* MotionInterchange.framework */,
+				1886C8AC16286D43E91ACD04E27BB271 /* Pods_material_carthage_ios.framework */,
+				223007ECD9FA4D4260AD700D9F6A0C26 /* Pods_material_carthage_iosTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1630,7 +1620,6 @@
 				D6AF723D333DB0AF93E12D8B4199B9B8 /* UIView+MaterialRTL.m */,
 				F373952AE324C36200EA7E3FB0630F15 /* Support Files */,
 			);
-			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -1732,7 +1721,6 @@
 				0AB727036EB9CBD13839F662F4AD77AC /* NSArray+MDFUtils.m */,
 				F047B0A7927745865E16F2C8064DA7AA /* Support Files */,
 			);
-			name = MDFTextAccessibility;
 			path = MDFTextAccessibility;
 			sourceTree = "<group>";
 		};
@@ -1900,7 +1888,6 @@
 				E08EE15EDFA413FE95DDB8985FC39F5B /* TextControls+FilledTextFields */,
 				8019589C84E7CAB06F38D6377D3CDA0E /* Typography */,
 			);
-			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
@@ -2364,7 +2351,7 @@
 			);
 			name = MDFInternationalization;
 			productName = MDFInternationalization;
-			productReference = 9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization */;
+			productReference = 9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A396D19079F48F8B3D75B45788F874B /* MotionInterchange */ = {
@@ -2382,7 +2369,7 @@
 			);
 			name = MotionInterchange;
 			productName = MotionInterchange;
-			productReference = 3DB47A6C65F93C42BC5C238DBE91BBE8 /* MotionInterchange */;
+			productReference = 3DB47A6C65F93C42BC5C238DBE91BBE8 /* MotionInterchange.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A8E4C927B2E899954BC2FD3314BCA9DA /* MDFTextAccessibility */ = {
@@ -2400,7 +2387,7 @@
 			);
 			name = MDFTextAccessibility;
 			productName = MDFTextAccessibility;
-			productReference = FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility */;
+			productReference = FB8220FA4D9117310AEFC629A6EE4A08 /* MDFTextAccessibility.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B24C4ABA3ADA0FF95B5FF72A88774D2D /* MotionAnimator */ = {
@@ -2419,7 +2406,7 @@
 			);
 			name = MotionAnimator;
 			productName = MotionAnimator;
-			productReference = A839CC75AF71B92A54EEB16D9B2C6C4C /* MotionAnimator */;
+			productReference = A839CC75AF71B92A54EEB16D9B2C6C4C /* MotionAnimator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */ = {
@@ -2440,7 +2427,7 @@
 			);
 			name = MaterialComponents;
 			productName = MaterialComponents;
-			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents */;
+			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B712FFA52D8DCACB2C987C446878C478 /* Pods-material-carthage-iosTests */ = {
@@ -2459,7 +2446,7 @@
 			);
 			name = "Pods-material-carthage-iosTests";
 			productName = Pods_material_carthage_iosTests;
-			productReference = 223007ECD9FA4D4260AD700D9F6A0C26 /* Pods-material-carthage-iosTests */;
+			productReference = 223007ECD9FA4D4260AD700D9F6A0C26 /* Pods_material_carthage_iosTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DF90696196F65237863CD68D1E0BF679 /* MaterialComponents-MaterialIcons_ic_arrow_back */ = {
@@ -2476,7 +2463,7 @@
 			);
 			name = "MaterialComponents-MaterialIcons_ic_arrow_back";
 			productName = MaterialIcons_ic_arrow_back;
-			productReference = 926DA190C7D642F031F184C79D52F1F7 /* MaterialComponents-MaterialIcons_ic_arrow_back */;
+			productReference = 926DA190C7D642F031F184C79D52F1F7 /* MaterialIcons_ic_arrow_back.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		FE9519205A93C59894B2CDEEFC1B2044 /* Pods-material-carthage-ios */ = {
@@ -2499,7 +2486,7 @@
 			);
 			name = "Pods-material-carthage-ios";
 			productName = Pods_material_carthage_ios;
-			productReference = 1886C8AC16286D43E91ACD04E27BB271 /* Pods-material-carthage-ios */;
+			productReference = 1886C8AC16286D43E91ACD04E27BB271 /* Pods_material_carthage_ios.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2508,8 +2495,9 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1520;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -2832,12 +2820,6 @@
 			target = 9A396D19079F48F8B3D75B45788F874B /* MotionInterchange */;
 			targetProxy = C898F95DE0A60845E1F01A1A9F6A7793 /* PBXContainerItemProxy */;
 		};
-		11E677C957084BCF81936A750120CE8D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MaterialComponents-MaterialIcons_ic_arrow_back";
-			target = DF90696196F65237863CD68D1E0BF679 /* MaterialComponents-MaterialIcons_ic_arrow_back */;
-			targetProxy = 6EC0064E1C0A2B3BAD266302A35E06FA /* PBXContainerItemProxy */;
-		};
 		49C633F14088D8DEA2FDFC85052E9842 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MDFTextAccessibility;
@@ -2899,25 +2881,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94F439D64C24BFBB675E255F0D31BC44 /* MDFTextAccessibility.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MDFTextAccessibility;
 				PRODUCT_NAME = MDFTextAccessibility;
 				SDKROOT = iphoneos;
@@ -2934,25 +2917,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E157EBAA4FA0A1B44FAFE5879781BE7 /* MotionAnimator.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MotionAnimator/MotionAnimator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MotionAnimator/MotionAnimator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MotionAnimator/MotionAnimator.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MotionAnimator;
 				PRODUCT_NAME = MotionAnimator;
 				SDKROOT = iphoneos;
@@ -2974,7 +2958,7 @@
 				ENABLE_BITCODE = YES;
 				IBSC_MODULE = MaterialComponents;
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/ResourceBundle-MaterialIcons_ic_arrow_back-MaterialComponents-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MaterialIcons_ic_arrow_back;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2989,18 +2973,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3008,6 +2991,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -3025,25 +3010,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8CC2EBEF0845AE8CCB0333F1F4F3EC1B /* MotionAnimator.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MotionAnimator/MotionAnimator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MotionAnimator/MotionAnimator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MotionAnimator/MotionAnimator.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MotionAnimator;
 				PRODUCT_NAME = MotionAnimator;
 				SDKROOT = iphoneos;
@@ -3061,25 +3047,26 @@
 			baseConfigurationReference = 6B0866E5D5EC7A6C7C75BE5D4479F736 /* MDFInternationalization.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MDFInternationalization;
 				PRODUCT_NAME = MDFInternationalization;
 				SDKROOT = iphoneos;
@@ -3096,25 +3083,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3789BD32257CF53D83EB282775B5E607 /* MDFTextAccessibility.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MDFTextAccessibility/MDFTextAccessibility.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MDFTextAccessibility;
 				PRODUCT_NAME = MDFTextAccessibility;
 				SDKROOT = iphoneos;
@@ -3134,18 +3122,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3153,6 +3140,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -3170,25 +3159,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 11CFF0379B5C3B2E628DDFB3F55D0B92 /* MotionInterchange.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MotionInterchange/MotionInterchange-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MotionInterchange/MotionInterchange-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MotionInterchange/MotionInterchange.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MotionInterchange;
 				PRODUCT_NAME = MotionInterchange;
 				SDKROOT = iphoneos;
@@ -3208,18 +3198,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3227,6 +3216,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -3246,25 +3237,26 @@
 			baseConfigurationReference = 8A2DBBAAA8E1780AA92A50D37FE4307D /* MaterialComponents.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MaterialComponents;
 				PRODUCT_NAME = MaterialComponents;
 				SDKROOT = iphoneos;
@@ -3313,9 +3305,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -3336,7 +3330,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3379,9 +3372,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -3398,7 +3393,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -3414,7 +3408,7 @@
 				ENABLE_BITCODE = YES;
 				IBSC_MODULE = MaterialComponents;
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/ResourceBundle-MaterialIcons_ic_arrow_back-MaterialComponents-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MaterialIcons_ic_arrow_back;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -3428,25 +3422,26 @@
 			baseConfigurationReference = 1645D0358414EC364EE6AD752500E1AE /* MaterialComponents.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MaterialComponents;
 				PRODUCT_NAME = MaterialComponents;
 				SDKROOT = iphoneos;
@@ -3463,25 +3458,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1557C1FF17539A08B998A405687B10A2 /* MotionInterchange.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MotionInterchange/MotionInterchange-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MotionInterchange/MotionInterchange-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MotionInterchange/MotionInterchange.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MotionInterchange;
 				PRODUCT_NAME = MotionInterchange;
 				SDKROOT = iphoneos;
@@ -3499,25 +3495,26 @@
 			baseConfigurationReference = 2DC1C9DF66F20909702D2FBE411A0762 /* MDFInternationalization.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/MDFInternationalization/MDFInternationalization-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "Target Support Files/MDFInternationalization/MDFInternationalization.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = MDFInternationalization;
 				PRODUCT_NAME = MDFInternationalization;
 				SDKROOT = iphoneos;
@@ -3537,18 +3534,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3556,6 +3552,8 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
