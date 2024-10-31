@@ -182,7 +182,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				ORGANIZATIONNAME = OpenClassrooms;
 				TargetAttributes = {
 					85C4FABE21DE1904003697D3 = {
