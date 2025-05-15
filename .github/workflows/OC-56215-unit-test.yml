@@ -1,9 +1,8 @@
-name: Unit test
+name: OC-56215 Unit test
 on:
   push:
     branches:
-      - main
-  pull_request:
+      - OC-56215_Test
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
