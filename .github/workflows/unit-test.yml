@@ -5,7 +5,7 @@ on:
       - main
   pull_request:
 
-concurrency: 
+concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
@@ -16,7 +16,7 @@ jobs:
     runs-on: macos-15
     steps:
       - name: Set Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer
+        run: sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
 
 
       - name: Checkout project
