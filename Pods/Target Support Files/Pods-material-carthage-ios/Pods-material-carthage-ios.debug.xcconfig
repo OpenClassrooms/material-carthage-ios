@@ -4,6 +4,7 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization/MDFInternationalization.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents/MaterialComponents.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MotionAnimator/MotionAnimator.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MotionInterchange/MotionInterchange.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "MDFInternationalization" -framework "MDFTextAccessibility" -framework "MaterialComponents" -framework "MotionAnimator" -framework "MotionInterchange"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/MDFInternationalization" "-F${PODS_CONFIGURATION_BUILD_DIR}/MDFTextAccessibility" "-F${PODS_CONFIGURATION_BUILD_DIR}/MaterialComponents" "-F${PODS_CONFIGURATION_BUILD_DIR}/MotionAnimator" "-F${PODS_CONFIGURATION_BUILD_DIR}/MotionInterchange"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
