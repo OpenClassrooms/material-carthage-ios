@@ -1,8 +1,8 @@
-name: Unit test
+name: OC-58641 Unit test
 on:
   push:
     branches:
-      - main
+      - OC-58641_Debugging
   pull_request:
 
 concurrency:
@@ -14,9 +14,12 @@ jobs:
     name: Check unit test
     timeout-minutes: 30
     runs-on: macos-15
+    env:
+      XCODE_VERSION: "26.2"
+
     steps:
       - name: Set Xcode
-        run: sudo xcode-select -s /Applications/Xcode_26.2.app/Contents/Developer
+        run: sudo xcode-select -s /Applications/Xcode_${{ env.XCODE_VERSION }}.app/Contents/Developer
 
       - name: Checkout project
         uses: actions/checkout@v4
@@ -24,9 +27,13 @@ jobs:
       - name: Install xcbeautify
         run: brew install xcbeautify
 
+      - name: List Simulators
+        run: xcrun simctl list devices
+
       - name: Run unit test
         run: >
           xcodebuild test
           -workspace material-carthage-ios.xcworkspace
           -scheme material-carthage-ios
-          -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2' 2>&1 | xcbeautify && exit ${PIPESTATUS[0]}
+          -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2'
+          2>&1 | xcbeautify && exit ${PIPESTATUS[0]}
