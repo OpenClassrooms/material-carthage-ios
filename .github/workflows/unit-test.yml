@@ -16,8 +16,7 @@ jobs:
     runs-on: macos-15
     steps:
       - name: Set Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
-
+        run: sudo xcode-select -s /Applications/Xcode_26.2.app/Contents/Developer
 
       - name: Checkout project
         uses: actions/checkout@v4
@@ -26,4 +25,8 @@ jobs:
         run: brew install xcbeautify
 
       - name: Run unit test
-        run: ./Tools/Test/run-unit-tests.sh
+        run: >
+          xcodebuild test
+          -workspace material-carthage-ios.xcworkspace
+          -scheme material-carthage-ios
+          -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2' 2>&1 | xcbeautify && exit ${PIPESTATUS[0]}
