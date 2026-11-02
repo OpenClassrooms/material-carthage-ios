@@ -162,7 +162,6 @@
 				85C4FAC421DE1904003697D3 /* Sources */,
 				85C4FAC521DE1904003697D3 /* Frameworks */,
 				85C4FAC621DE1904003697D3 /* Resources */,
-				44182D39AE2D1301943513F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +181,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2660;
 				ORGANIZATIONNAME = OpenClassrooms;
 				TargetAttributes = {
 					85C4FABE21DE1904003697D3 = {
@@ -232,25 +231,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44182D39AE2D1301943513F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D618FBED80047D7BDCCDB710 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

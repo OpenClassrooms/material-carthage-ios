@@ -9,6 +9,10 @@ target 'material-carthage-ios' do
         config.build_settings['ENABLE_BITCODE'] = 'YES'
 
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+
+        # Xcode's module verifier rejects the double-quoted includes in
+        # CocoaPods-generated umbrella headers of legacy pods (MotionAnimator, etc.)
+        config.build_settings['ENABLE_MODULE_VERIFIER'] = 'NO'
       end
 
       # Remove `MaterialIcons_ic_arrow_back` resource bundle from `MaterialComponents`
