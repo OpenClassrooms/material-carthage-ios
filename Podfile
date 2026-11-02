@@ -42,7 +42,9 @@ target 'material-carthage-ios' do
   pod 'MaterialComponents/Snackbar'
 
   target 'material-carthage-iosTests' do
-    inherit! :search_paths
+    # :complete so CocoaPods embeds the dynamic pod frameworks into the test
+    # bundle — it has no host app, so nothing else copies them at runtime
+    inherit! :complete
   end
 
 end

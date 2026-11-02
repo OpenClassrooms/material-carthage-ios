@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		322527190D2EC485CE4F1B30 /* Pods_material_carthage_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB7574C449A21B75E01233E /* Pods_material_carthage_ios.framework */; };
+		485DE46178819C4CB86718A4 /* Pods_material_carthage_ios_material_carthage_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3134F83770A430A5BCC12 /* Pods_material_carthage_ios_material_carthage_iosTests.framework */; };
 		830A879B2BB30382003784AC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 830A879A2BB30382003784AC /* PrivacyInfo.xcprivacy */; };
 		85C4FAC921DE1904003697D3 /* material_carthage_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C4FABF21DE1904003697D3 /* material_carthage_ios.framework */; };
 		85C4FACE21DE1904003697D3 /* material_carthage_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C4FACD21DE1904003697D3 /* material_carthage_iosTests.swift */; };
 		85C4FAD021DE1904003697D3 /* material_carthage_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C4FAC221DE1904003697D3 /* material_carthage_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85C81D7A8DC84EA57CCBA448 /* Pods_material_carthage_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D3094EEAD1716C16F2F9E5 /* Pods_material_carthage_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,9 @@
 /* Begin PBXFileReference section */
 		0A9F00628E27E4EF59943EEF /* Pods-material-carthage-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		2BB7574C449A21B75E01233E /* Pods_material_carthage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34804B1F9C0E5DCA882FC18E /* Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		47CC57CFE872F1B39A58D94D /* Pods-material-carthage-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios.release.xcconfig"; sourceTree = "<group>"; };
+		48B3134F83770A430A5BCC12 /* Pods_material_carthage_ios_material_carthage_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_ios_material_carthage_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830A879A2BB30382003784AC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		85C4FABF21DE1904003697D3 /* material_carthage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = material_carthage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C4FAC221DE1904003697D3 /* material_carthage_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = material_carthage_ios.h; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 		85C4FACF21DE1904003697D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B37686889219689F5D034E /* Pods-material-carthage-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF487B57F32D477290124383 /* Pods-material-carthage-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		D2D3094EEAD1716C16F2F9E5 /* Pods_material_carthage_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7626A8E006161E79BD9B478 /* Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C4FAC921DE1904003697D3 /* material_carthage_ios.framework in Frameworks */,
-				85C81D7A8DC84EA57CCBA448 /* Pods_material_carthage_iosTests.framework in Frameworks */,
+				485DE46178819C4CB86718A4 /* Pods_material_carthage_ios_material_carthage_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +71,8 @@
 				47CC57CFE872F1B39A58D94D /* Pods-material-carthage-ios.release.xcconfig */,
 				96B37686889219689F5D034E /* Pods-material-carthage-iosTests.debug.xcconfig */,
 				0A9F00628E27E4EF59943EEF /* Pods-material-carthage-iosTests.release.xcconfig */,
+				F7626A8E006161E79BD9B478 /* Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig */,
+				34804B1F9C0E5DCA882FC18E /* Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -116,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				2BB7574C449A21B75E01233E /* Pods_material_carthage_ios.framework */,
-				D2D3094EEAD1716C16F2F9E5 /* Pods_material_carthage_iosTests.framework */,
+				48B3134F83770A430A5BCC12 /* Pods_material_carthage_ios_material_carthage_iosTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +166,7 @@
 				85C4FAC421DE1904003697D3 /* Sources */,
 				85C4FAC521DE1904003697D3 /* Frameworks */,
 				85C4FAC621DE1904003697D3 /* Resources */,
+				3F3AD448829741033DFF5E88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +236,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F3AD448829741033DFF5E88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D618FBED80047D7BDCCDB710 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,7 +290,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-material-carthage-iosTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-material-carthage-ios-material-carthage-iosTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,7 +514,7 @@
 		};
 		85C4FAD721DE1904003697D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96B37686889219689F5D034E /* Pods-material-carthage-iosTests.debug.xcconfig */;
+			baseConfigurationReference = F7626A8E006161E79BD9B478 /* Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "material-carthage-iosTests/Info.plist";
@@ -510,7 +532,7 @@
 		};
 		85C4FAD821DE1904003697D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A9F00628E27E4EF59943EEF /* Pods-material-carthage-iosTests.release.xcconfig */;
+			baseConfigurationReference = 34804B1F9C0E5DCA882FC18E /* Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "material-carthage-iosTests/Info.plist";
