@@ -9,6 +9,10 @@ target 'material-carthage-ios' do
         config.build_settings['ENABLE_BITCODE'] = 'YES'
 
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+
+        # Xcode's module verifier rejects the double-quoted includes in
+        # CocoaPods-generated umbrella headers of legacy pods (MotionAnimator, etc.)
+        config.build_settings['ENABLE_MODULE_VERIFIER'] = 'NO'
       end
 
       # Remove `MaterialIcons_ic_arrow_back` resource bundle from `MaterialComponents`
@@ -38,7 +42,9 @@ target 'material-carthage-ios' do
   pod 'MaterialComponents/Snackbar'
 
   target 'material-carthage-iosTests' do
-    inherit! :search_paths
+    # :complete so CocoaPods embeds the dynamic pod frameworks into the test
+    # bundle — it has no host app, so nothing else copies them at runtime
+    inherit! :complete
   end
 
 end
