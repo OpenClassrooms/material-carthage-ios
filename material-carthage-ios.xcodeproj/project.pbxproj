@@ -26,7 +26,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A9F00628E27E4EF59943EEF /* Pods-material-carthage-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		2BB7574C449A21B75E01233E /* Pods_material_carthage_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_material_carthage_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34804B1F9C0E5DCA882FC18E /* Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		47CC57CFE872F1B39A58D94D /* Pods-material-carthage-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -38,7 +37,6 @@
 		85C4FAC821DE1904003697D3 /* material-carthage-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "material-carthage-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C4FACD21DE1904003697D3 /* material_carthage_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = material_carthage_iosTests.swift; sourceTree = "<group>"; };
 		85C4FACF21DE1904003697D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96B37686889219689F5D034E /* Pods-material-carthage-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-iosTests/Pods-material-carthage-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF487B57F32D477290124383 /* Pods-material-carthage-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios/Pods-material-carthage-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		F7626A8E006161E79BD9B478 /* Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-material-carthage-ios-material-carthage-iosTests/Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +67,6 @@
 			children = (
 				BF487B57F32D477290124383 /* Pods-material-carthage-ios.debug.xcconfig */,
 				47CC57CFE872F1B39A58D94D /* Pods-material-carthage-ios.release.xcconfig */,
-				96B37686889219689F5D034E /* Pods-material-carthage-iosTests.debug.xcconfig */,
-				0A9F00628E27E4EF59943EEF /* Pods-material-carthage-iosTests.release.xcconfig */,
 				F7626A8E006161E79BD9B478 /* Pods-material-carthage-ios-material-carthage-iosTests.debug.xcconfig */,
 				34804B1F9C0E5DCA882FC18E /* Pods-material-carthage-ios-material-carthage-iosTests.release.xcconfig */,
 			);
